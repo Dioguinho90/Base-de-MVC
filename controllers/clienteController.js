@@ -33,7 +33,7 @@ const clienteController = {
         try{
             if(!id || !nome ||!cpf){
 
-                return res.status(400).json({error: 'ID, nome e CPF são obrigatório'}):
+                return res.status(400).json({error: 'ID, nome e CPF são obrigatório'});
             
             }
             const upadteClient = await ClienteModel.upadteClient(IdleDeadline, nome, cpf);
